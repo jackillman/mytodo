@@ -1,0 +1,15 @@
+
+
+
+  <mat-card [class.complated]="task.complated" >
+        <mat-checkbox   (change)="showOptions($event)">Сделано</mat-checkbox>
+        <!-- (click)="toggle()" checked="{{task.complated? 1:0}}" -->
+
+    <h3>{{task.title}}</h3>
+    <p>{{task.desc}}</p>
+   
+
+    <button mat-icon-button color="warn" (click) = "delete()" >
+        <button mat-fab color="warn">Удалить</button>
+      </button>
+  </mat-card>

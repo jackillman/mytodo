@@ -1,0 +1,6 @@
+
+    <div *ngFor="let task of tasks">
+        <app-taskitem [task]="task" (onDelete)="delete(task)" (onToggle)="toggle(task)"></app-taskitem>
+    </div>
+    
+

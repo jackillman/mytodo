@@ -1,0 +1,9 @@
+<form class="example-form" #myForm="ngForm" novalidate >
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Тема" value="" name="title" ngModel >
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Описание" value="" name="desc" ngModel>
+  </mat-form-field>
+  <button mat-raised-button color="warn" (click)="submit(myForm)">Отправить</button>
+</form>
