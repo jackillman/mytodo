@@ -26,7 +26,14 @@ toggle(){
   // console.log(this.bool)
 }
 create(a,b,c){
- let tk = new Task(a,b,c)
+  // let i=0;
+ let tk = new Task(a,b,c);
+ 
 this.tasks.push(tk);
+// tk.it = i;
+
+// var serialObj = JSON.stringify(tk);
+// localStorage.setItem("obj",serialObj);
+// i++;
 }
 }

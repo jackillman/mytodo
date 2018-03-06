@@ -28,6 +28,7 @@ tasks:Task[];
   }
   create(tit, des, comp){
     this.taskService.create(tit, des, comp)
+   
     
   }
 }

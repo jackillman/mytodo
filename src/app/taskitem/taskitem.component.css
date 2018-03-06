@@ -4,4 +4,33 @@
 }
 mat-card{
     margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width: 80%;
+    align-self: center;
+}
+mat-checkbox{
+    width: 10%;
+    align-self: center;
+}
+.compl{
+    color: #000;
+}
+@media (max-width:767px){
+    mat-card{
+        padding: 20px;
+        margin: 10px auto 10px;
+        font-size: 12px;
+        flex-direction: column;
+    } 
+    mat-checkbox{
+        align-self: flex-start;
+    }
+    .content{
+        align-self: flex-start;
+    }
 }

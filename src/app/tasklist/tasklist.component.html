@@ -2,5 +2,9 @@
     <div *ngFor="let task of tasks">
         <app-taskitem [task]="task" (onDelete)="delete(task)" (onToggle)="toggle(task)"></app-taskitem>
     </div>
+
+    <div class="footer" *ngIf="tasks.length > 0">
+        <p><span>Задач осталось:</span> {{tasks.length}}  </p>
+    </div>
     
 

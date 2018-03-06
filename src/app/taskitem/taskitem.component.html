@@ -2,12 +2,12 @@
 
 
   <mat-card [class.complated]="task.complated" >
-        <mat-checkbox   (change)="showOptions($event)">Сделано</mat-checkbox>
+        <mat-checkbox   (change)="showOptions($event)"><span class="compl" *ngIf="task.complated">Сделано</span> </mat-checkbox>
         <!-- (click)="toggle()" checked="{{task.complated? 1:0}}" -->
-
-    <h3>{{task.title}}</h3>
-    <p>{{task.desc}}</p>
-   
+    <div class="content">
+      <h3><span>Тема:</span> {{task.title}}</h3>
+      <p><span>Описание:</span> {{task.desc}}</p>
+    </div>
 
     <button mat-icon-button color="warn" (click) = "delete()" >
         <button mat-fab color="warn">Удалить</button>

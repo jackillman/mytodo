@@ -1,0 +1,15 @@
+.mat-form-field{
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+}
+button{
+    margin: 0 auto;
+    display: block;
+   
+}
+@media (max-width:767px){
+    .mat-form-field{
+        width: 100%;
+    }
+}
